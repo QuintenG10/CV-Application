@@ -1,0 +1,173 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f9;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 20px;
+}
+
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Form Styles */
+.cv-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.cv-form div {
+  margin-bottom: 20px;
+}
+
+.cv-form label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.cv-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.cv-form input[type="text"],
+.cv-form input[type="email"] {
+  margin-bottom: 12px;
+}
+
+/* Education and Experience Sections */
+.cv-form h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.cv-form .education-section,
+.cv-form .experience-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cv-form .education-section div,
+.cv-form .experience-section div {
+  display: flex;
+  flex-direction: column;
+}
+
+.cv-form .education-section input,
+.cv-form .experience-section input {
+  width: 100%;
+}
+
+/* Resume Preview Styles */
+.resume-preview {
+  margin-top: 40px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.resume-preview h2 {
+  text-align: center;
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.resume-preview .resume-section {
+  margin-bottom: 20px;
+}
+
+.resume-preview .resume-section h3 {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.resume-preview .resume-section p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.resume-preview .resume-section p br {
+  margin-bottom: 5px;
+}
+
+.download-btn {
+  background-color: #28a745;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 4px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 20px auto;
+}
+
+.download-btn:hover {
+  background-color: #218838;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 20px;
+  }
+
+  .cv-form input {
+    font-size: 16px;
+  }
+
+  .resume-preview {
+    margin-top: 30px;
+  }
+}
